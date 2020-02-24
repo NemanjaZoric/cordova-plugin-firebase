@@ -42,6 +42,7 @@ Notification flow:
 
 1. App is in foreground:
     1. User receives the notification data in the JavaScript callback without any notification on the device itself (this is the normal behaviour of push notifications, it is up to you, the developer, to notify the user)
+    2. enableForegroundNotifications() may be called during app startup, then user will receive notification messages in device notification bar. 
 2. App is in background:
     1. User receives the notification message in its device notification bar
     2. User taps the notification and the app opens
